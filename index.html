@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flomic Logistic LMT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Flomic Logistic LMT</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Your Trusted Logistics Partner</h2>
+    <p>Delivering solutions for a seamless supply chain.</p>
+    <button>Get a Quote</button>
+  </div>
+
+  <div class="container">
+    <main>
+
+      <section class="blog">
+        <h3>Latest Blog Posts</h3>
+        <div class="blog-grid">
+          <div class="blog-item" onclick="showPopup('blog1')">
+            <h4>5 Tips for Efficient Logistics</h4>
+            <p>Boost your logistics performance with these key strategies...</p>
+          </div>
+          <div class="blog-item" onclick="showPopup('blog2')">
+            <h4>Importance of Supply Chain</h4>
+            <p>Explore why supply chain management is vital for your business...</p>
+          </div>
+          <div class="blog-item" onclick="showPopup('blog3')">
+            <h4>Customs Compliance in 2024</h4>
+            <p>Stay ahead with the latest compliance updates for global logistics...</p>
+          </div>
+          <div class="blog-item" onclick="showPopup('blog4')">
+            <h4>Innovations in Freight Technology</h4>
+            <p>How technology is changing the face of freight management...</p>
+          </div>
+          <div class="blog-item" onclick="showPopup('blog5')">
+            <h4>Sustainable Logistics</h4>
+            <p>How logistics companies can reduce carbon footprints...</p>
+          </div>
+          <div class="blog-item" onclick="showPopup('blog6')">
+            <h4>Future Trends in Warehousing</h4>
+            <p>Predictions for the evolution of warehousing in the next decade...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Pop-up Modals -->
+      <div id="blog1" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="hidePopup('blog1')">&times;</span>
+          <h4>5 Tips for Efficient Logistics</h4>
+          <p>Here are the top five ways to streamline logistics...</p>
+        </div>
+      </div>
+      <div id="blog2" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="hidePopup('blog2')">&times;</span>
+          <h4>Importance of Supply Chain</h4>
+          <p>Effective supply chain management is the key to business success...</p>
+        </div>
+      </div>
+      <div id="blog3" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="hidePopup('blog3')">&times;</span>
+          <h4>Customs Compliance in 2024</h4>
+          <p>Customs regulations and how they impact your business in 2024...</p>
+        </div>
+      </div>
+      <div id="blog4" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="hidePopup('blog4')">&times;</span>
+          <h4>Innovations in Freight Technology</h4>
+          <p>Discover how AI and automation are reshaping logistics...</p>
+        </div>
+      </div>
+      <div id="blog5" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="hidePopup('blog5')">&times;</span>
+          <h4>Sustainable Logistics</h4>
+          <p>Tips for reducing carbon emissions while improving efficiency...</p>
+        </div>
+      </div>
+      <div id="blog6" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="hidePopup('blog6')">&times;</span>
+          <h4>Future Trends in Warehousing</h4>
+          <p>Get ahead of the curve with predictions on automation...</p>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Shipping Rates</a></li>
+        <li><a href="#">Track Your Shipment</a></li>
+        <li><a href="#">Request a Quote</a></li>
+        <li><a href="#">Customer Support</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@flomiclogistic.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Subscribe for Updates</h3>
+        <form id="subscribeForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="socials">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2024 Flomic Logistic LMT. All Rights Reserved.</p>
+  </footer>
+
+  <div id="overlay" class="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
